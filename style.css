@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --red: #b51f1e;
+    /* --red: black; */
+    --orange: #ed6508;
+    --brown: #9e3900;
+    --cream: #d9ab89;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--red);
+    font-family: "Anton SC", sans-serif;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.navbar{
+    background-color: var(--orange);
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius:20px;
+}
+
+.navbar .items{
+    background-color: transparent;
+    padding: 15px;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 560;
+}
+
+
+.middle {
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: var(--cream); */
+    height: 70vh;
+}
+
+.playersection{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--orange);
+    align-items: center;
+    padding: 30px 20px 30px 20px;
+}
+
+.playersection .playername {
+    color: black;
+}
+
+.playersection h1{
+    background-color: transparent;
+}
+
+#playerX {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#playerO {
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+
+.gameSection{
+    width: 400px;
+    height: 400px;
+    background-color: var(--cream);
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--brown);
+    font-size: 3rem;
+    font-family: "Space Mono",monospace;
+
+    
+}
+
+.newgamebutton .engGame{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: transparent; */
+    /* background-color: beige; */
+}
+
+button{
+    background-color: transparent;
+    /* background: none; */
+    font-size: 1.4rem;
+    border: none;
+    
+}
